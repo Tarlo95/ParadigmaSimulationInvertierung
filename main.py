@@ -9,29 +9,29 @@ black = (0,0,0)
 gameDisplay = pygame.display.set_mode((1400,1000))
 gameDisplay.fill(black)
 
-höheHand = 100
+hoeheHand = 100
 hand_x = 200
-hand_y = höheHand
+hand_y = hoeheHand
 brad = 15
 zeit = time.time()
 
 ballBreite = 10
 
-höhevirtuelleHand = 700
+hoehevirtuelleHand = 700
 virtuelleHand_x = 700
-virtuelleHand_y = höhevirtuelleHand
+virtuelleHand_y = hoehevirtuelleHand
 
 SpielfeldStart = 200
 SpielfeldEnde = 1200
 
 Invertierung = 1 # 1=keine; -1= Invertierung
-loslassen = 1 #variable, dass nur ein klick Zählt und nicht mehrere bei Mouse Button Down ausgeführt werden
+loslassen = 1 #variable, dass nur ein klick Zaehlt und nicht mehrere bei Mouse Button Down ausgefuehrt werden
 
 virtuellerReferenzwert= SpielfeldStart + 500
-virtuellerReferenzwert_y=höhevirtuelleHand
+virtuellerReferenzwert_y=hoehevirtuelleHand
 
 handReferenzwert = SpielfeldStart + 500
-handReferenzwert_y = höheHand
+handReferenzwert_y = hoeheHand
 Faktor = (SpielfeldEnde - virtuellerReferenzwert) / (virtuellerReferenzwert - SpielfeldStart)
 pygame.mouse.set_visible(True)
 
@@ -44,14 +44,14 @@ def zeichnen():
 
 
     pygame.draw.circle(gameDisplay, farbeHand, (hand_x, hand_y), brad, 0) #Hand/Controller
-    pygame.draw.line(gameDisplay, (150,0,0), (SpielfeldStart, höheHand), (SpielfeldEnde, höheHand)) #obere Linie
+    pygame.draw.line(gameDisplay, (150,0,0), (SpielfeldStart, hoeheHand), (SpielfeldEnde, hoeheHand)) #obere Linie
     pygame.draw.circle(gameDisplay, farbeHand, (virtuelleHand_x, virtuelleHand_y), brad, 0) #virtuelle Hand
-    pygame.draw.line(gameDisplay, (150, 0, 0), (SpielfeldStart, höhevirtuelleHand), (SpielfeldEnde, höhevirtuelleHand)) #untere Linie
+    pygame.draw.line(gameDisplay, (150, 0, 0), (SpielfeldStart, hoehevirtuelleHand), (SpielfeldEnde, hoehevirtuelleHand)) #untere Linie
     pygame.draw.circle(gameDisplay, (150,0,0), (virtuellerReferenzwert, virtuellerReferenzwert_y), 10, 0) #virtueller Referenzwert
     pygame.draw.circle(gameDisplay, (150,0,0), (handReferenzwert, handReferenzwert_y), 10, 0) #Hand Referenzwert
-    #grüne Kreise zum Testen
-    #pygame.draw.circle(gameDisplay, (0, 150, 0), (450, virtuellerReferenzwert_y), 10, 0) #linker grüner Kreis
-    #pygame.draw.circle(gameDisplay, (0, 150, 0), (950, virtuellerReferenzwert_y), 10, 0) #rechter grüner Kreis
+    #gruene Kreise zum Testen
+    #pygame.draw.circle(gameDisplay, (0, 150, 0), (450, virtuellerReferenzwert_y), 10, 0) #linker gruener Kreis
+    #pygame.draw.circle(gameDisplay, (0, 150, 0), (950, virtuellerReferenzwert_y), 10, 0) #rechter gruener Kreis
 
 
     pygame.display.update()
