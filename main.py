@@ -1,4 +1,4 @@
-import pygame
+import pygame #moeglicherweise noch "python3 -m pip install -U pygame --user" im Terminal eingeben um Datenbank zu laden
 import sys
 import time
 
@@ -71,9 +71,6 @@ while True:
                 Invertierung *= -1
                 virtuellerReferenzwert = virtuelleHand_x
                 handReferenzwert = hand_x
-                print(Invertierung)
-                print(Faktor)
-
 
     if event.type == pygame.MOUSEBUTTONUP:
         loslassen = 1
