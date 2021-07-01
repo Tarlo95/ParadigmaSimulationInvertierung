@@ -1,7 +1,7 @@
 # ParadigmaSimulationInvertierung
 Test um Invertierung während des Versuchs möglich zu machen
 
-Der Code ist im Branch master
+Der Code ist im Branch master (sorry, verschieben hab ich nicht gebacken bekommen)
 
 Beim starten des Codes sollte sich ein kleines Spiel öffnen.
 falls es pygame nicht finden kann folgendes in den Terminal eingeben: python3 -m pip install -U pygame --user
