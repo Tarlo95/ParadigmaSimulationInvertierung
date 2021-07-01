@@ -6,7 +6,7 @@ Der Code ist im Branch master (sorry, verschieben hab ich nicht gebacken bekomme
 Beim starten des Codes sollte sich ein kleines Spiel öffnen.
 falls es pygame nicht finden kann folgendes in den Terminal eingeben um die Bibliothek herunterzuladen: python3 -m pip install -U pygame --user
 
-Was sieht man?
+/br Was sieht man?
 Der Kreis auf der oberen Linie soll die Hand bzw den Controller darstellen.
 Der Kreis auf der unteren Linie soll die virtuelle Hand darstellen
 
