@@ -4,7 +4,7 @@ Test um Invertierung während des Versuchs möglich zu machen
 Der Code ist im Branch master (sorry, verschieben hab ich nicht gebacken bekommen)
 
 Beim starten des Codes sollte sich ein kleines Spiel öffnen.
-falls es pygame nicht finden kann folgendes in den Terminal eingeben: python3 -m pip install -U pygame --user
+falls es pygame nicht finden kann folgendes in den Terminal eingeben um die Bibliothek herunterzuladen: python3 -m pip install -U pygame --user
 
 Der Kreis auf der oberen Linie soll die Hand bzw den Controller darstellen.
 Der Kreis auf der unteren Linie soll die virtuelle Hand darstellen
